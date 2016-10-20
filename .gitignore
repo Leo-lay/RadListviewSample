@@ -1,0 +1,7 @@
+*.js
+*.css
+node_modules
+platforms
+hooks
+.vscode
+lib
