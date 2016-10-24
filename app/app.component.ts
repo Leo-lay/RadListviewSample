@@ -3,8 +3,7 @@ import { ObservableArray } from 'data/observable-array';
 import { ListViewEventData } from 'nativescript-telerik-ui/listview';
 @Component({
     selector: "my-app",
-    templateUrl: "app.component.html",
-    styles: ['app.component.css']
+    templateUrl: "app.component.html"
 })
 export class AppComponent implements OnInit {
     public counter: number = 16;
@@ -17,7 +16,7 @@ export class AppComponent implements OnInit {
             { id: 2, name: '微信', isSelected: false },
             { id: 3, name: '支付宝', isSelected: false },
             { id: 4, name: '其他', isSelected: false }
-        ]
+        ];
         this.dataItems = new ObservableArray<RadListviewSelectorModel>(tempList);
     }
 

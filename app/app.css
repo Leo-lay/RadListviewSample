@@ -1,0 +1,39 @@
+.gridLayoutStyle {
+    /*border-width: 1;
+    border-color: #123456;*/
+    height: 30;
+}
+.nav{
+  margin: 10;
+  height: 30;
+
+}
+.container{
+  height: 100%;
+  width:100%;
+}
+.list-normal {
+    color: #2ECFC8;
+    background-color: transparent;
+    border-color: #2ECFC8;
+    border-width: 1;
+    border-radius: 10;
+    padding: 3 1;
+    text-align: center;
+    margin: 0 3;
+}
+
+.list-selected {
+    color: #ffffff;
+    background-color: #2ECFC8;
+    border-color: #2ECFC8;
+    border-width: 1;
+    border-radius: 10;
+    text-align: center;
+    padding: 3 1;
+    margin: 0 3;
+}
+
+.label{
+  color:#123456;
+}

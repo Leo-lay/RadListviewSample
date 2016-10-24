@@ -5,8 +5,8 @@ import { AppComponent } from "./app.component";
 import { LISTVIEW_DIRECTIVES } from 'nativescript-telerik-ui/listview/angular';
 
 @NgModule({
-    declarations: [AppComponent],
-    bootstrap: [AppComponent,LISTVIEW_DIRECTIVES],
+    declarations: [AppComponent,LISTVIEW_DIRECTIVES],
+    bootstrap: [AppComponent],
     imports: [NativeScriptModule],
 })
 class AppComponentModule {}

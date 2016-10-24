@@ -1,10 +1,16 @@
-<GridLayout>
-    <RadListView [items]="dataItems" row="0" (itemTap)="onItemTap($event)" class="selector-list-group">
-        <template tkListItemTemplate let-item="item" class="m-t-20">
-            <GridLayout class="gridLayoutStyle">
-                <Label [class]="item.isSelected ? 'h4 list-selected':'h4 list-normal'" text="{{item.name}}"></Label>
-            </GridLayout>
-        </template>
-        <ListViewGridLayout tkListViewLayout  scrollDirection="Vertical" spanCount="5"></ListViewGridLayout>
-    </RadListView>
-</GridLayout>
+<StackLayout  class="container" orientation="vertical">
+    <ActionBar title="Sample RadListview"></ActionBar>
+    <GridLayout class="nav">
+        <RadListView [items]="dataItems" row="0" (itemTap)="onItemTap($event)">
+            <template tkListItemTemplate let-item="item" class="m-t-20">
+              <GridLayout class="gridLayoutStyle">
+                  <Label [class]="item.isSelected ? 'h4 list-selected':'h4 list-normal'" text="{{item.name}}"></Label>
+              </GridLayout>
+            </template>
+            <ListViewGridLayout tkListViewLayout scrollDirection="Vertical" spanCount="5"></ListViewGridLayout>
+        </RadListView>
+    </GridLayout>
+    <GridLayout >
+        <Label text="Hi RadListView" class="label"></Label>
+    </GridLayout>
+</StackLayout>
